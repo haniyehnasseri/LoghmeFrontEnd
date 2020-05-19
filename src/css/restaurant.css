@@ -1,0 +1,409 @@
+@font-face {
+    src :url(../fonts/Vazir-Thin.ttf);
+    font-family: vazir-thin;
+}
+
+@font-face {
+    src :url(../fonts/Vazir-Bold.ttf);
+    font-family: vazir-bold;
+}
+
+@font-face {
+    src :url(../fonts/Vazir-Medium.ttf);
+    font-family: vazir-medium;
+}
+
+@font-face {
+    src :url(../fonts/Vazir.ttf);
+    font-family: vazir;
+}
+
+* {
+    font-family: vazir-thin;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 901px) {
+    .minus-plus div,.minus-plus i:before,.price{
+        font-size: 10px;
+    }
+
+    .order-name,.basket-title{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .minus-plus div,.minus-plus i:before,.price{
+        font-size: 7px;
+    }
+
+    .price{
+        font-size: 5px;
+    }
+}
+
+html,body{
+    height: 100%;
+    min-height: 100%;
+    background: #F7FFF7!important;
+    padding: 0;
+    margin: 0;
+}
+
+#root{
+    min-height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+
+
+.restaurant-logo-environment {
+    position: relative;
+    top:5vh;
+    background-color: #FF6B6B;
+    height: 14vmin;
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+
+.restaurant-logo{
+    position: absolute;
+    height:18vmin;
+    top:25%;
+    border-radius: 15%;
+    border: 5px solid white;
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray;
+}
+
+.restaurant-name {
+    position: relative;
+    top:170%;
+    font-size: 3vmin;
+    font-family: vazir-medium;
+}
+
+.foodTitle{
+    position:absolute;
+    top:38vmin;
+    font-size: 3vmin;
+    font-weight: lighter;
+    padding-right:1%;
+    left:3%;
+    width:65%;
+    display: flex;
+    justify-content: center;
+}
+
+.foodTitle span{
+    position:absolute;
+    border-bottom:1px solid #003A4A;
+    color:#003A4A;
+    text-align:center;
+    padding:0 1%;
+    width:28%;
+    left:36.1%;
+}
+
+.flex-container {
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 1vmin;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width:68%;
+    border-right: 1px dashed #D3D3D3;
+    padding-bottom: 8vmin;
+
+}
+
+#food-basket{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-top: 30vmin;
+    width: 100%;
+    padding-bottom: 10vmin;
+}
+
+#inpage{
+    width: 25%;
+    margin-left: 3%;
+    box-shadow:-1px 1px 5px 0px rgba(224,221,224,1);
+}
+
+.basket {
+    background-color:white;
+
+    width:100%;
+    text-align: center;
+    padding-bottom: 2%;
+    border-radius: 5px;
+}
+
+.panel-body{
+    position: relative;
+    left: 2%;
+    box-shadow:-1px 1px 5px 0px rgba(224,221,224,1);
+    padding:1%;
+    width:30%;
+    margin:1.5%;
+    margin-bottom:5%;
+    transform: scaleY(1.15);
+    text-align:center;
+}
+
+
+.food-image{
+    margin-top: 2%;
+    height: 50%;
+    width: 50%;
+}
+
+.food-name span{
+    font-size: 1vmin;
+}
+
+.food-name{
+    margin-top: 2%;
+    font-size: 1.4vmin;
+}
+
+
+.food-price{
+    font-size: 1.2vmin;
+    padding-bottom:0.5vmin;
+}
+
+.food-cart-add{
+    background-color:#FFE66D;
+    width:78%;
+    font-size:1.25vmin;
+    outline: none!important;
+}
+
+.star{
+    width:5%;
+}
+
+#Expired .food-cart-add{
+    background-color:#D3D3D3;
+}
+
+
+.content{
+    height: 50vh;
+    width: 100%;
+    background-color: #FBA1A1;
+    margin: 20px;
+}
+
+
+.minus-plus{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
+
+.minus-plus div{
+    flex-grow: 1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flaticon-minus {
+    color: red;
+}
+
+
+.minus-plus i:before {
+    flex-grow: 1;
+    font-style: normal;
+    margin-left: 0px;
+}
+
+.column-group{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+    text-align:left;
+    padding-right: 5%;
+    padding-left: 2%;
+}
+
+.price {
+    color: #585858;
+    text-align: center;
+    font-size:0.87vw;
+}
+
+.row-group{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom:1px solid #D3D3D3;
+    padding-top: 5%;
+    padding-bottom: 2%;
+
+}
+
+#restaurantSpinner{
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.order-name {
+    right:0px;
+    color: #585858;
+    font-weight: lighter;
+    font-size: 2vmin;
+    width: 50%;
+    padding-left: 5%;
+    text-align: right;
+}
+
+
+.basket-title{
+    font-size: 2vmin;
+    margin-top: 5%;
+    font-weight: lighter;
+    border-bottom:1px solid #787878;
+    display: inline-block;
+    margin-bottom: 5%;
+}
+
+.orders-container{
+    border: 1px dashed #D3D3D3;
+    margin-right:10%;
+    margin-left: 10%;
+    border-radius: 20px;
+    padding:0% 7% 5% 7%;
+}
+
+.total-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: 100;
+    font-size: 2vmin;
+    padding: 4%;
+}
+
+#basket-modal{
+    margin: auto;
+}
+
+.btn-confirm{
+    background-color: #4ECCC3;
+    border-radius:5px;
+    color: white;
+    text-align: center;
+    font-size: 2vmin;
+    padding: 1vmin;
+    margin:auto;
+    outline: none!important;
+    margin-bottom: 2vmin;
+}
+
+#footer{
+    font-size: 1.5vmin;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left:0;
+    background-color:#1A535C;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:5vmin;
+}
+
+.add-food-btn{
+    background-color: #4ECCC3;
+    border-radius:5px;
+    color: white;
+    text-align: center;
+    font-size: 1.3vmin;
+    padding: 0.5vmin;
+    margin-right: 5%;
+    outline: none!important;
+    width: 40%;
+
+}
+
+.minus-plus-info div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12%;
+    font-size: 2vmin;
+}
+
+.flaticon-minus {
+    color: red;
+}
+
+.minus-plus-info i:before {
+    font-style: normal;
+    margin: 0px;
+    font-size: 2vmin;
+}
+
+.minus-plus-info{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:center;
+    width: 30%;
+
+}
+
+.info-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.food-price-info{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-around;
+    font-size:1.9vmin;
+}
+
+.food-price-info span{
+    margin-left: 2vmin;
+}
